@@ -5,7 +5,45 @@
 		<meta charset="utf-8">
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
 		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<style type="text/css">
+			.iconfont {			/* 标题 */
+				font-size: 0.5rem;
+				line-height: 1rem;
+				color: #f60;
+			}
+			.mui-bar {
+				height: 1rem;
+			}
+			.mui-title {
+				font-size: 0.4rem;
+				line-height: 1rem;
+			}
+			.mui-title {
+				color: #f60;
+			}
+			.mui-bar-nav~.mui-content {
+				padding-top: 1rem;
+			}
+			.leftList {			/* 商品列表分类的样式 */
+				padding: 0 0.2rem;
+				overflow-y: scroll;
+			}
+			.leftList li {
+				height: 1rem;
+				line-height: 1rem;
+				text-indent: 2em;
+				color: #fff;
+				font-size: 0.4rem;
+				border-bottom: 1px #666 solid;
+			}
+			.leftList li .iconfont {
+				color: #fff;
+				font-size: 0.4rem;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -16,8 +54,28 @@
 			<div class="mui-scroll-wrapper">
 			  <div class="mui-scroll">
 				<!-- 菜单具体展示内容 -->
-				<ul>
-					<li>菜单一</li>
+				<ul class="leftList">
+					<li><i class="iconfont icon-present"></i> 咖啡奶茶</li>
+					<li><i class="iconfont icon-present"></i> 功能饮料</li>
+					<li><i class="iconfont icon-present"></i> 茶水饮料</li>
+					<li><i class="iconfont icon-present"></i> 碳酸饮料</li>
+					<li><i class="iconfont icon-present"></i> 果蔬饮料</li>
+					<li><i class="iconfont icon-present"></i> 饮用水</li>
+					<li><i class="iconfont icon-present"></i> 乳饮料</li>
+					<li><i class="iconfont icon-present"></i> 乳酸菌</li>
+					<li><i class="iconfont icon-present"></i> 酸奶</li>
+					<li><i class="iconfont icon-present"></i> 牛奶</li>
+					<li><i class="iconfont icon-present"></i> 红酒</li>
+					<li><i class="iconfont icon-present"></i> 白酒</li>
+					<li><i class="iconfont icon-present"></i> 啤酒</li>
+					<li><i class="iconfont icon-present"></i> 豆干素食</li>
+					<li><i class="iconfont icon-present"></i> 海味零食</li>
+					<li><i class="iconfont icon-present"></i> 膨化食品</li>
+					<li><i class="iconfont icon-present"></i> 青果槟郎</li>
+					<li><i class="iconfont icon-present"></i> 坚果类</li>
+					<li><i class="iconfont icon-present"></i> 包装肉类</li>
+					<li><i class="iconfont icon-present"></i> 饼干糕点</li>
+					<li><i class="iconfont icon-present"></i> 冲调食品</li>
 				</ul>
 			  </div>
 			</div>
@@ -26,13 +84,15 @@
 		  <div class="mui-inner-wrap">
 			<!-- 主页面标题 -->
 			<header class="mui-bar mui-bar-nav">
-			  <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
-			  <h1 class="mui-title">标题</h1>
+			  <a class="iconfont icon-caidan"></a>
+			  <h1 class="mui-title">商品列表</h1>
 			</header>
 			<div class="mui-content mui-scroll-wrapper">
 			  <div class="mui-scroll">
 				<!-- 主界面具体展示内容 -->
-				菜单一显示的内容
+				<div class="shopContent con01">
+				咖啡奶茶
+				</div>				
 			  </div>
 			</div>  
 		  </div>
@@ -41,6 +101,8 @@
 		
 		
 		<script src="../js/mui.min.js"></script>
+		<script src="../js/jQuery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			mui.init()
 			//mui('.mui-off-canvas-wrap').offCanvas().show();
