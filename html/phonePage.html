@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<style type="text/css">
+			header {
+				height: 2rem;
+				background: #007AFF;
+			}
+			header img {
+				display: block;
+				height: 2rem;
+				width: 100%;
+			}
+			.technologicalProcess {				/* 回收流程 */
+				height: 0.8rem;
+				margin: 7px 0;
+				background: #fff;
+				display: flex;
+			}
+			.technologicalProcess li {
+				flex: 1;
+				height: 0.8rem;
+				line-height: 0.8rem;
+				font-size: 0.2rem;
+				text-align: center;
+				color: #666;
+				position: relative;
+			}
+			.technologicalProcess li .iconfont {
+				color: #f60;
+				position: absolute;
+				left: 0.2rem;
+			}
+			.classification {			/* 可收回垃圾分类列表 */
+				background: #fff;
+				margin-bottom: 7px;
+			}
+			.classification h1 {
+				height: 0.6rem;
+				line-height: 0.6rem;
+				font-size: 0.26rem;
+				text-align: center;
+				border-bottom: 1px #ccc solid;
+			}
+			.classification ul {
+				text-align: center;
+			}
+			.classification ul li {
+				display: inline-block;
+				height: 1rem;
+				width: 30%;
+			}
+			.classification ul li>h2 {
+				height: 0.7rem;
+				width: 100%;
+				text-align: center;
+				margin: 0;
+			}
+			.classification ul li>h2>img {
+				display: inline-block;
+				width: 0.7rem;
+				height: 0.7rem;
+			}
+			.classification ul li>p {
+				margin: 0;
+				padding: 0;
+				text-align: center;
+				font-size: 0.2rem;
+				color: #333;
+			}
+			footer {
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 1rem;
+				background: #fff;
+				clear: both;
+				border-top: 1px #ccc solid;
+			}
+			footer h2 {
+				height: 0.6rem;
+				line-height: 0.6rem;
+				text-align: center;
+				color: #666;
+				font-weight: normal;
+				margin: 0;
+			}
+			footer h2 .iconfont {
+				font-size: 0.4rem;
+			}
+			footer p {
+				margin: 0;
+				height: 0.4rem;
+				text-align: center;
+			}
+			.greenShopping {
+				float: left;
+				height: 1rem;
+				width: 1.5rem;
+			}
+			.exchange {
+				float: right;
+				height: 1rem;
+				width: 1.5rem;
+			}
+			.recovery {
+				position: absolute;
+				width: 1rem;
+				height: 1.6rem;
+				left: 50%;
+				top: -0.2rem;
+				margin-left: -0.5rem;
+				overflow: hidden;
+			}
+			.recoveryBtn {
+				height: 1.6rem;
+				width: 1.6rem;
+				border: 1px #ccc solid;
+				border-radius: 50%;
+				position: absolute;
+				left: 50%;
+				top: 0;
+				margin-left: -0.8rem;
+				background: #fff;
+				text-align: center;
+			}
+			.recoveryTxt {
+				display: inline-block;
+				width: 1rem;
+				height: 1rem;
+				border-radius: 50%;
+				background: #f60;
+				color: #fff;
+				text-align: center;
+				font-size: 0.24rem;
+				line-height: 0.5rem;
+				margin-top: 0.1rem;
+			}
+			.recoveryTxt>a {
+				color: #fff;
+				font-size: 0.24rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--banner-->
+		<header>
+			<div class="mui-slider">
+			  <div class="mui-slider-group mui-slider-loop">
+				<!--支持循环，需要重复图片节点-->
+				<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="../img/garbageCollection02.jpg" ></a></div>
+				<div class="mui-slider-item"><a href="#"><img src="../img/garbageCollection01.jpg" ></a></div>
+				<div class="mui-slider-item"><a href="#"><img src="../img/garbageCollection02.jpg" ></a></div>
+				<!--支持循环，需要重复图片节点-->
+				<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="../img/garbageCollection01.jpg" ></a></div>
+			  </div>
+			</div>
+		</header>
+		<!--垃圾回收流程-->
+		<ul class="technologicalProcess">
+			<li>
+				<i class="iconfont icon-newshot"></i>&nbsp;&nbsp;&nbsp;&nbsp;查看分类
+			</li>
+			<li>
+				<i class="iconfont icon-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;拨打电话
+			</li>
+			<li>
+				<i class="iconfont icon-deliver"></i>&nbsp;&nbsp;&nbsp;&nbsp;上门回收
+			</li>
+			<li>
+				<i class="iconfont icon-recharge"></i>&nbsp;&nbsp;&nbsp;&nbsp;收益结算
+			</li>
+		</ul>
+		<!-- 可回收垃圾分类 -->
+		<section class="classification">
+			<h1>可回收垃圾分类</h1>
+			<ul>
+				<li>
+					<h2><img src="../img/class01.jpeg" ></h2>
+					<p>废纸回收</p>
+				</li>
+				<li>
+					<h2><img src="../img/class02.png" ></h2>
+					<p>废塑料回收</p>
+				</li>
+				<li>
+					<h2><img src="../img/class03.jpg" ></h2>
+					<p>金属回收</p>
+				</li>
+			</ul>
+		</section>
+		<!-- 底部选项卡 -->
+		<footer class="footer">
+			<div class="greenShopping">
+				<h2><i class="iconfont icon-shop"></i></h2>
+				<p>绿色购物</p>
+			</div>
+			<div class="recovery">
+				<div class="recoveryBtn">
+					<div class="recoveryTxt">
+						<a href="tel:18237022344">我要<br />回收</a>
+					</div>				
+				</div>
+			</div>
+			<div class="exchange">
+				<h2><i class="iconfont icon-ticket"></i></h2>
+				<p>积分兑换</p>
+			</div>
+		</footer>
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			//获得slider插件对象
+			var gallery = mui('.mui-slider');
+			gallery.slider({
+			  interval:3000//自动轮播周期，若为0则不自动播放，默认为0；
+			});
+			mui(".footer").on('tap','.greenShopping',function(){
+				mui.toast("工程师加班开发中，敬请期待！");
+			}); 
+			mui(".footer").on('tap','.exchange',function(){
+				mui.toast("工程师加班开发中，敬请期待！");
+			});
+		</script>
+	</body>
+
+</html>
