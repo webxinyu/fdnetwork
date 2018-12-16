@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>帝景北苑</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css"/>
+		<style type="text/css">
+			section {
+				background: #fff;
+				padding: 10px 7px;
+			}
+			section h2 {
+				height: 0.8rem;
+				line-height: 0.8rem;
+				font-size: 0.3rem;
+				border-bottom: 1px #ccc solid;
+			}
+			.map {
+				width: 100%;
+			}
+			.map>img {
+				display: block;
+				width: 100%;
+			}
+			section ul {
+				text-align: center;
+			}
+			section ul li {
+				display: inline-block;
+				width: 1.9rem;
+				height: 1.9rem;
+			}
+			section ul li>img {
+				height: 100%;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<section id="dijingbeiyuan">
+			<h2>社区地图</h2>
+			<div class="map">
+				<img src="../../img/mapImg/dijingbeiyuan.png" >
+			</div>
+			<h2>社区美图</h2>
+			<ul>
+				<li><img src="../../img/mapImg/dijingbeiyuan01.jpg" ></li>
+				<li><img src="../../img/mapImg/dijingbeiyuan01.jpg" ></li>
+				<li><img src="../../img/mapImg/dijingbeiyuan01.jpg" ></li>
+				<li><img src="../../img/mapImg/dijingbeiyuan01.jpg" ></li>
+				<li><img src="../../img/mapImg/dijingbeiyuan01.jpg" ></li>
+				<li><img src="../../img/mapImg/dijingbeiyuan01.jpg" ></li>
+			</ul>
+		</section>
+		
+		
+		<script src="../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jQuery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady(function(){				 
+				 var self = plus.webview.currentWebview();
+				 console.log(self)
+				 var name = self.name;
+			});
+			
+		</script>
+	</body>
+</html>
